@@ -23,6 +23,24 @@ router.get('/swagger.json', (req, res) => {
  *         type: string
  */
 
+/**
+ * @swagger
+ * definitions:
+ *   Repository:
+ *     type: object
+ *     properties:
+ *       name:
+ *         type: string
+ *       full_name:
+ *         type: string
+ *       url:
+ *         type: string
+ *       api_url:
+ *         type: string
+ *       private:
+ *         type: boolean
+ */
+
 router.use('/org', org);
 router.use('/search', search);
 

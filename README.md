@@ -1,4 +1,4 @@
-# RepoHunter
+# RepoHunter API
 
 In any organization with freely working teams, there comes a time when nobody
 really knows what everyone else is working on. This is especially true in the
