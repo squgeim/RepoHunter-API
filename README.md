@@ -26,34 +26,37 @@ GET /api-docs
 
 ## Deployment
 
-1. Clone this repo in your server.
+*You can replace `yarn` by `npm` in all of these commands, if you prefer to.*
+
+#### 1. Clone this repo in your server.
 
 ```sh
-git clone --depth 1 https://github.com/squgeim/RepoHunter-API
+git clone https://github.com/squgeim/RepoHunter-API
 ```
 
-2. Install the dependencies
+#### 2. Install the dependencies
 
 ```sh
 yarn install
 ```
 
-3. Copy the .env.example file to .env file
+#### 3. Copy the `.env.example` file to `.env` file
 
 ```sh
 cp .env.example .env
 ```
 
-4. Set the appropriate environment settings in the .env file. Enter your
-organization's github name in `GITHUB_ORGANIZATION`. Enter the admin's access
-token in `GITHUB_TOKEN`.
+#### 4. Set the appropriate environment settings in the `.env` file.
+
+Enter your organization's github name in `GITHUB_ORGANIZATION`. Enter the
+admin's access token in `GITHUB_TOKEN`.
 
 See here to know more about Personal Access Tokens in Github:
 https://github.com/blog/1509-personal-api-tokens
 
 Make sure you have the `repo` scope activated for this access token.
 
-5. Start the server
+#### 5. Start the server
 
 ```sh
 yarn start
