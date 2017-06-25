@@ -27,8 +27,8 @@ export function notFoundError(req, res) {
  * @param  {object}   res
  * @param  {function} next
  */
-export function genericErrorHandler(err, req, res) {
-  // eslint-disable-line no-unused-vars
+/* eslint-disable no-unused-vars */
+export function genericErrorHandler(err, req, res, next) {
   if (err.stack) {
     logger.debug(err.stack);
   }

@@ -12,7 +12,7 @@ import compression from 'compression';
 
 import routes from './routes';
 import logger from './utils/logger';
-import * as errorHandler from './middlewares/errorHandler';
+import * as errorHandler from './middlewares/errorHandler.middleware';
 
 const app = express();
 

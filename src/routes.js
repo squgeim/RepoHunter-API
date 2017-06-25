@@ -1,6 +1,9 @@
 import { Router } from 'express';
 import swaggerSpec from './utils/swagger';
 
+import org from './controllers/org.controller';
+import search from './controllers/search.controller';
+
 const router = Router();
 
 router.get('/swagger.json', (req, res) => {
@@ -19,5 +22,8 @@ router.get('/swagger.json', (req, res) => {
  *       apiVersion:
  *         type: string
  */
+
+router.use('/org', org);
+router.use('/search', search);
 
 export default router;

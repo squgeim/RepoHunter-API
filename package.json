@@ -36,6 +36,7 @@
     "cors": "^2.8.3",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
+    "github-api": "^3.0.0",
     "helmet": "^3.6.1",
     "http-status-codes": "^1.1.6",
     "joi": "^10.6.0",
@@ -57,7 +58,6 @@
     "jest": "^20.0.4",
     "lint-staged": "^4.0.0",
     "nodemon": "^1.11.0",
-    "pm2": "^2.5.0",
     "prettier": "^1.4.4",
     "rimraf": "^2.6.1"
   },
