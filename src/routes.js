@@ -3,7 +3,7 @@ import swaggerSpec from './utils/swagger';
 
 import org from './controllers/org.controller';
 import search from './controllers/search.controller';
-
+import pkgInfo from './controllers/pkgInfo.controller';
 const router = Router();
 
 router.get('/swagger.json', (req, res) => {
@@ -41,7 +41,17 @@ router.get('/swagger.json', (req, res) => {
  *         type: boolean
  */
 
+/**
+ * @swagger
+ * definitions:
+ *   Repository:
+ *     type: object
+ *     properties:
+ *       name:
+ *         type: string
+ */
 router.use('/org', org);
 router.use('/search', search);
+router.use('/pkg-info', pkgInfo);
 
 export default router;
